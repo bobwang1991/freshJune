@@ -1,0 +1,133 @@
+/*logo start*/
+#main div.logo{
+    width: 25%;
+    position: absolute;
+    top: 1%;
+    left: 4%;
+}
+#main div.logo img{
+    width: 100%;
+}
+/*logo end*/
+/*小水滴 start*/
+#main div.small-water-point {
+    width: 60%;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    -webkit-animation: opacity1 3s 1s infinite linear;
+    opacity: 0;
+}
+#main div.small-water-point img{
+    width: 100%;
+}
+/*小水滴 end*/
+/*大水滴 start*/
+#main div.big-water-point div {
+    opacity: 0;
+}
+/*动画定义 start*/
+.animation:nth-child(1){
+    -webkit-animation: opacity1 1s 0s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(2){
+    -webkit-animation: opacity1 1s .5s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(3){
+    -webkit-animation: opacity1 1s 1s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(4){
+    -webkit-animation: opacity1 1s 1.5s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(5){
+    -webkit-animation: opacity1 1s 2s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(6){
+    -webkit-animation: opacity1 1s 2.5s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+.animation:nth-child(7){
+    -webkit-animation: opacity1 1s 3s linear;
+    -webkit-animation-fill-mode:forwards;   /*保护结束状态*/
+}
+@-webkit-keyframes opacity1 {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+/*动画定义 end*/
+#main div.big-water-point div:nth-child(1){
+    width: 15%;
+    position: absolute;
+    top: 55%;
+    right: 35%;
+}
+#main div.big-water-point div:nth-child(2){
+    width: 12%;
+    position: absolute;
+    top: 49%;
+    right: 48%;
+}
+#main div.big-water-point div:nth-child(3){
+    width: 20%;
+    position: absolute;
+    top: 36%;
+    right: 24%;
+}
+#main div.big-water-point div:nth-child(4){
+    width: 18%;
+    position: absolute;
+    top: 25%;
+    right: 38%;
+}
+#main div.big-water-point div:nth-child(5){
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    right: 28%;
+}
+#main div.big-water-point div:nth-child(6){
+    width: 18%;
+    position: absolute;
+    top: 11%;
+    right: 48%;
+}
+#main div.big-water-point div:nth-child(7){
+    width: 13%;
+    position: absolute;
+    top: 3%;
+    right: 39%;
+}
+#main div.big-water-point div img{
+    width: 100%;
+}
+/*大水滴 end*/
+/*文字 start*/
+#main div.home-txt {
+    width: 30%;
+    position: absolute;
+    top: 16%;
+    left: 4%;
+}
+#main div.home-txt img{
+    width: 100%;
+}
+/*文字 end*/
+/*底部酱油瓶 start*/
+#main div.bottle {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#main div.bottle img{
+    width: 100%;
+}
+/*底部酱油瓶 end*/
+@media screen and (min-width: 320px) and (max-height: 480px) {
+    #main div.bottle{width: 80%;left:10%;}
+    #main div.home-txt{width: 25%;left: 6%;}
+}

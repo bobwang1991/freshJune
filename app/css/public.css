@@ -1,0 +1,19 @@
+#main {
+    width: 100%;
+    max-width: 770px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+#main div.musicBtn{
+    width: 10%;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+#main div.musicBtn img{
+    width: 100%;
+}

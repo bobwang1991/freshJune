@@ -1,0 +1,174 @@
+@import "share.css";
+/*title start*/
+#main div.title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #7d4112;
+    text-align: center;
+    margin: 2.19rem 0 0;
+}
+/*title end*/
+/*cookProduct start*/
+#main div.cookProduct{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7d4112;
+    text-align: center;
+    margin: 0 0 1.1rem;
+    padding: 0 2%;
+}
+/*cookProduct end*/
+/*banner start*/
+.swipe {
+    margin-bottom: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.swipe ul {
+    overflow: hidden;
+}
+#slider li {
+    width: 240px;
+    float: left;
+    position: relative;
+}
+#slider li a {
+    text-align: center;
+    display: block;
+}
+#slider li img {
+    width: 100%;
+}
+/*查看详细菜谱 start*/
+.swipe ul#slider li div.watchMenuContent {
+    width: 100%;
+    position: absolute;
+    bottom: 30%;
+    left: 48%;
+}
+#slider li div.watchMenuContent img {
+    width: 7%;
+    float: left;
+    vertical-align: middle;
+}
+#slider li div.watchMenuContent span{
+    vertical-align: middle;
+    font-size: 0.75rem;
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+/*查看详细菜谱 end*/
+.swipe div#prev{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.swipe div#next{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+/*banner end*/
+/*填写祝福话语 start*/
+#main div.wish{
+    text-align: center;
+}
+#main div.wish textarea {
+    /*width: 64%;*/
+    /*height: 3.5rem;*/
+    width: 70%;
+    height: 4rem;
+    border-radius: 3px;
+    background: white;
+    /*padding: 0.4rem 0 0 0.6rem;*/
+    padding: 0.4rem 0.6rem;
+    resize: none;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: #7d4112;
+}
+textarea::-webkit-input-placeholder {
+    color: #7d4112;
+    font-weight: 500;
+}
+/*填写祝福话语 end*/
+/*领取按钮 start*/
+#main div.getBtn{
+    margin: 2rem auto 11.8rem;;
+}
+/*领取按钮 end*/
+/*弹窗 菜谱详情 start*/
+#main div.popUp div.cook {
+    width: 90%;
+    margin:3.1rem auto 13.5rem;
+    padding: 0 0 1rem;
+    background:rgba(255, 255, 255, .7);
+}
+#main div.popUp div.cook div.close{
+    width: 4%;
+    margin: 0 0 0 90%;
+    padding: 1rem 0 0;
+}
+#main div.popUp div.cook div.close img{
+    width: 100%;
+}
+#main div.popUp div.cook div.cookTitle {
+    width: 65%;
+    margin: 0 auto 0.5rem;
+}
+#main div.popUp div.cook:nth-child(3) div.cookTitle{
+    width: 85%;
+}
+#main div.popUp div.cook:nth-child(4) div.cookTitle{
+    width: 75%;
+}
+#main div.popUp div.cook div.cookTitle img{
+    width: 100%;
+}
+#main div.popUp div.cook div.cookDetail{
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #7d4112;
+    margin: 0 0 1.1rem;
+    padding: 0 8%;
+}
+#main div.popUp div.cook div.cook-pic{
+    width: 85%;
+    margin: 0 auto 1.32rem;
+}
+#main div.popUp div.cook div.cook-pic img{
+    width: 100%;
+}
+#main div.popUp div.cook div.cookMenu{
+    padding: 0 8%;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #7d4112;
+}
+#main div.popUp div.cook div.cookMenu span{
+    display: block;
+    font-size: 0.95rem;
+    color: #45aca9;
+}
+/*弹窗 菜谱详情 end*/
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    #main div.getBtn{margin: 2rem auto 7.55rem;}
+    #main div.popUp div.cook{margin: 2.8rem auto 9.7rem;}
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    #main div.popUp div.cook{margin: 2.5rem auto 5.5rem;}
+    /*6.30 17:50新增*/
+    #main div.title{margin: 1.5rem 0 0;}
+    #main div.getBtn{margin: 0 auto 4.3rem;}
+    #main div.cookProduct{font-size: 0.85rem;}
+    /*#main div.wish textarea{width: 70%;}*/
+}

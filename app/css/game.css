@@ -1,0 +1,96 @@
+/*太阳月亮背景*/
+#main{
+    width: 100%;
+    max-width: 770px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main div.musicBtn{
+    width: 10%;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+#main div.musicBtn img{
+    width: 100%;
+}
+#main div.sunMoon{
+    width: 100%;
+}
+#main div.sunMoon img{
+    width: 100%;
+    height:100%;
+}
+/*标题*/
+#main div.title{
+    width: 85%;
+    position: absolute;
+    top: 14%;
+    left: 8%;
+}
+#main div.title img{
+    width: 100%;
+}
+/*酱油瓶*/
+#main div.game-bottle{
+    width: 35%;
+    position: absolute;
+    top: 28%;
+    left: 34%;
+}
+#main div.game-bottle img{
+    width: 100%;
+    pointer-events: none;   /*禁止移动端浏览器长按对图片弹出保存*/
+}
+/*日期*/
+#main div.date{
+    width: 10%;
+    position: absolute;
+    top: 32%;
+    left: 14%;
+}
+#main div.date img{
+    width: 100%;
+}
+/*底部文字*/
+#main div.txt{
+    width: 85%;
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+}
+#main div.txt img{
+    width: 100%;
+}
+/*按钮标签*/
+#main div.getBtn {
+    width: 100%;
+    height: 4.3rem;
+    background: url("../images/right-and-false/btn.png") no-repeat;
+    background-position: center;
+    background-size: 40%;
+    margin: 0;
+    position: absolute;
+    bottom:2%;
+    left:0;
+}
+#main div.getBtn input{
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    width: 33%;
+    font-size: 1.3rem;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    color: #7d4112;
+    font-weight: bold;
+    line-height: 2rem;
+}
+/*适配*/
+@media screen and (min-width: 340px) and (max-width: 380px) {
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    #main div.getBtn input{top: 18%;font-size: 1.1rem;}
+}

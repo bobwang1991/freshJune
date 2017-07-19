@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>六月鲜</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+        <link rel="stylesheet" href="css/reset.min.css"/>
+        <link rel="stylesheet" href="css/public.css"/>
+        <link rel="stylesheet" href="css/share.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div class="share-menu">
+                <div class="menuPic"><img src="images/menu/menuCover-01.png" alt=""/></div>
+                <div class="pushpin"><img src="images/share/pushpin.png" alt=""/></div>
+                <div class="white-shadow"></div>
+                <div class="share-txt">
+                    <p>
+                        <span>用心生活</span>
+                        <span>用心吃好每顿饭</span>
+                    </p>
+                </div>
+            </div>
+            <div class="finsh-menu customized">
+                <p>
+                    总会有这样一道美食，<br/>
+                    唤起你对用心的深刻体会
+                </p>
+            </div>
+            <!--分享按钮 start-->
+            <div class="getBtn custBtn">
+                <a href="cookmenu.html">
+                    <input type="button" value="定制用心菜谱"/>
+                </a>
+            </div>
+            <!--分享按钮 end-->
+            <!--musicBtn start-->
+            <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+            <audio loop="" id="bg_music" autoplay="autoplay">
+                <source src="music/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!--musicBtn end-->
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            /*背景音乐*/
+            (function () {
+                var bg_music = document.getElementById("bg_music");
+                $('.musicBtn').toggle(function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOff.png');
+                        bg_music.pause();
+                    }
+                },function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOn.png');
+                        bg_music.play();
+                    }
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

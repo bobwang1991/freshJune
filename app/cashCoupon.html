@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>六月鲜</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+        <link rel="stylesheet" href="css/reset.min.css"/>
+        <link rel="stylesheet" href="css/public.css"/>
+        <link rel="stylesheet" href="css/cashCoupon.css"/>
+        <!--<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />-->
+    </head>
+    <body>
+        <div id="main">
+            <!--标题 start-->
+            <div class="title">
+                <p>用心酱励</p>
+            </div>
+            <!--标题 end-->
+            <!--代金券 start-->
+            <div class="cash"><img src="images/cash-coupon/cash.png" alt=""/></div>
+            <!--代金券 end-->
+            <!--温馨提示 start-->
+            <div class="warm-notice"><img src="images/cash-coupon/txt.png" alt=""/></div>
+            <!--温馨提示 end-->
+            <!--领取按钮 start-->
+            <div class="getBtn">
+                <a href="share.html">
+                    <input type="button" value="生成用心菜谱"/>
+                </a>
+            </div>
+<!--            <div class="menuBtn">
+                <a href="share.html">
+                    <input type="button" value="生成用心菜谱"/>
+                </a>
+            </div>-->
+            <!--领取按钮 end-->
+            <!--活动说明 start-->
+            <div class="activity-notice">
+                <p>
+                    <img src="images/cash-coupon/point.png" alt=""/>
+                    <span>活动说明</span>
+                </p>
+            </div>
+            <!--活动说明 end-->
+            <!--活动弹窗 start-->
+            <div class="popUpActivity">
+                <div class="close"><img src="images/cash-coupon/close.png" alt=""/></div>
+                <div class="popUpTitle">
+                    <img src="images/cash-coupon/popUpTxt.png" alt=""/>
+                </div>
+                <div class="popUpTxt" id="style-7">
+                    <p>
+                        1. 活动时间：<br/>
+                        2016年7月4日——2016年7月17日<br/>
+                        2. 活动参与方式：<br/>
+                        在活动页面体验酿造酱油过程后，选择菜谱并写下您的用心故事分享至朋友圈，即可参与抽奖。<br/>
+                        3. 奖项设置及中奖规则<br/>
+                        奖品为系统随机抽取，数量送完为止。<br/>
+                        一等奖：【六月鲜礼包一份】（数量100份）<br/>
+                        二等奖：【微商城5元优惠券】（数量100,000份）<br/>
+                        4. 领奖方式：<br/>
+                        1）点击优惠券领取，使用方式参见店铺说明。<br/>
+                        2）六月鲜礼包：<br/>
+                        a.填写个人信息（姓名+电话+邮寄地址），活动结束后的一周内以快递寄出；确认领奖事宜后1个月内，如未向主办方声明礼包获得情况，则视为已获得，逾期不补；<br/>
+                        b.如因获奖者提供信息不全或有误（包括真实姓名、邮寄地址及联系电话等），导致礼包无法送达，主办方不为此承担任何责任。<br/>
+                        c.本活动奖项一经确认不得转换、转让或折换现金，奖品规格外观以实物为准。<br/>
+                        5. 其他：<br/>
+                        1)	本次活动的主办方为欣和六月鲜（统一简称"主办方"）。<br/>
+                        2)	主办方及其广告公司、网络合作伙伴的员工及其家属不可参加此活动，以示公允。<br/>
+                        3)	对于任何通过不正当手段参加活动者，主办方有权在不事先通知的前提下取消其参加活动及获奖资格。<br/>
+                        4)	主办方不对因网络传输原因而导致参加者提交的信息错误承担任何责任。<br/>
+                        5)	如遇不可抗力因素，本活动因故无法进行时，主办方在法律允许的范围内有权决定取消、终止、修改或暂停本活动。
+                    </p>
+                </div>
+            </div>
+            <!--活动弹窗 end-->
+            <!--musicBtn start-->
+            <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+            <audio loop="" id="bg_music" autoplay="autoplay">
+                <source src="music/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!--musicBtn end-->
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <!--<script src="js/jquery-ui-1.10.4.min.js"></script>-->
+        <!--<script src="js/jquery.mousewheel.min.js"></script>-->
+        <!--<script src="js/jquery.mCustomScrollbar.js"></script>-->
+        <script type="text/javascript">
+            $(function () {
+                var hMain = $(window).height();
+                var hTitle = $('#Title').height();
+                $('#main').height(hMain);
+                $('#style-7').height(hMain-70);
+            });
+            /*背景音乐*/
+            (function () {
+                var bg_music = document.getElementById("bg_music");
+                $('.musicBtn').toggle(function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOff.png');
+                        bg_music.pause();
+                    }
+                },function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOn.png');
+                        bg_music.play();
+                    }
+                });
+            })(jQuery);
+            (function () {
+                var _btn = $('#main>div.activity-notice');
+                var _close = $('#main>div.popUpActivity>div.close');
+                var _activity = $('#main>div.popUpActivity');
+                _btn.click(function () {
+                    _activity.show();
+                });
+                _close.click(function () {
+                    _activity.hide();
+                });
+            })();
+//            (function($){
+//                $(window).load(function(){
+//                    $(".popUpTxt").mCustomScrollbar();
+//                });
+//            })(jQuery);
+//            (function (){
+//                $(".content").mCustomScrollbar({
+//                    set_width:false,
+//                    set_height:false,
+//                    horizontalScroll:false,
+//                    scrollInertia:550,
+//                    scrollEasing:"easeOutCirc",
+//                    mouseWheel:"auto",
+//                    autoDraggerLength:true,
+//                    scrollButtons:{
+//                        enable:false,
+//                        scrollType:"continuous",
+//                        scrollSpeed:50,
+//                        scrollAmount:40
+//                    },
+//                    advanced:{
+//                        updateOnBrowserResize:true,
+//                        updateOnContentResize:false,
+//                        autoExpandHorizontalScroll:false,
+//                        autoScrollOnFocus:true
+//                    },
+//                    callbacks:{
+//                        onScrollStart:function(){},
+//                        onScroll:function(){},
+//                        onTotalScroll:function(){},
+//                        onTotalScrollBack:function(){},
+//                        onTotalScrollOffset:0,
+//                        whileScrolling:false,
+//                        whileScrollingInterval:30
+//                    }
+//                });
+//            })();
+        </script>
+    </body>
+</html>

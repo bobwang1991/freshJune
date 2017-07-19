@@ -1,0 +1,79 @@
+@import "share.css";
+#main div.allRight {
+    width: 40%;
+    margin: 4.25rem auto 0;
+}
+#main div.allRight img{
+    width: 100%;
+}
+#main div.congratulation {
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #7d4112;
+    margin: 0.88rem 0 1rem;
+}
+#main div.right-txt {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #7d4112;
+}
+#main div.getBtn{
+    background: url("../images/right-and-false/btn.png") no-repeat;
+    background-position: center;
+    background-size: 40%;
+    margin: 4rem auto 11.4rem;
+}
+#main div.getBtn input{
+    top: 18%;
+    left: 33%;
+    width: 33%;
+    font-size: 1.3rem;
+}
+#main div.tryBtn{
+    margin:2rem auto 6.75rem;
+}
+#main div.video{
+    width: 73%;
+    margin: 1.5rem auto 0;
+}
+#main div.video iframe{
+    width: 100%;
+}
+#main div.error {
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    color: #7d4112;
+    margin: 0.88rem 0 0;
+    letter-spacing: 3px;
+}
+#main div.error-txt {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #7d4112;
+}
+
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    #main div.getBtn{margin: 2rem auto 10rem;}
+    /*6.30 17:50新增*/
+    #main div.tryBtn{margin: 1rem auto 4.3rem;}
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    #main div.getBtn{margin: 2rem auto 9.1rem;}
+    /*6.30 17:50新增*/
+    #main div.tryBtn{margin: 0 auto 3.9rem;}
+    #main div.allRight{width: 35%;margin: 3rem auto 0;}
+    #main div.congratulation{font-size: 1.8rem;}
+    #main div.right-txt{font-size: 1rem;}
+    #main div.error-txt{font-size: 1rem;}
+    #main div.error{font-size: 1.5rem;}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>六月鲜</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+        <link rel="stylesheet" href="css/normal-style.css"/>
+        <link rel="stylesheet" href="css/public.css"/>
+        <link rel="stylesheet" href="css/cartoon.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div class="cartoon">
+                <img src="images/gif/cartoon-02.gif" alt=""/>
+            </div>
+            <!--musicBtn start-->
+            <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+            <audio loop="" id="bg_music" autoplay="autoplay">
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!--musicBtn end-->
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var hMain = $(window).height();
+                $('#main').height(hMain);
+            });
+            (function () {
+                setTimeout(function () {
+                    window.location.href = 'cartoonThird.html';
+                }, 3000)
+            })();
+            /*背景音乐*/
+            (function () {
+                var bg_music = document.getElementById("bg_music");
+                $('.musicBtn').toggle(function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOff.png');
+                        bg_music.pause();
+                    }
+                },function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOn.png');
+                        bg_music.play();
+                    }
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

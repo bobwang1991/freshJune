@@ -1,0 +1,246 @@
+/*标题*/
+#main div.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #7d4112;
+    margin: 3rem 0 0;
+}
+/*代金券*/
+#main div.cash {
+    width: 70%;
+    margin: 2.4rem auto 0;
+}
+#main div.cash img{
+    width: 100%;
+}
+/*温馨提示*/
+#main div.warm-notice {
+    width: 50%;
+    margin: 2.5rem auto 2rem;
+}
+#main div.warm-notice img{
+    width: 100%;
+}
+/*领取按钮 start*/
+#main div.getBtn{
+    margin: 0 auto 0;
+    width: 100%;
+    height: 4.3rem;
+    background: url("../images/btnBg.png") no-repeat;
+    background-position: center;
+    background-size: 40%;
+    position: relative;
+}
+#main div.getBtn input{
+    position: absolute;
+    top: 27%;
+    left: 34%;
+    width: 33%;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    color: #7d4112;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+#main div.menuBtn{
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/right-and-false/btn.png") no-repeat;
+    background-position: center 0;
+    background-size: 40%;
+}
+#main div.menuBtn input{
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    width: 33%;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    color: #7d4112;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+/*活动说明*/
+#main div.activity-notice{
+    padding-bottom: 13.6rem;
+}
+#main div.activity-notice p{
+    text-align: center;
+}
+#main div.activity-notice p img{
+    display: inline;
+    vertical-align: middle;
+}
+#main div.activity-notice p span {
+    vertical-align: middle;
+    color: #7d4112;
+    font-weight: 300;
+}
+/*大礼包*/
+#main div.packs {
+    width: 50%;
+    margin: 0 auto;
+}
+#main div.packs img{
+    width: 100%;
+}
+/*填写表单 start*/
+#main div.packsForm {
+    width: 53%;
+    margin: 0 auto 0.82rem;
+}
+#main div.packsForm form div.name{
+    margin-bottom: 0.6rem;
+}
+#main div.packsForm form div.name label{
+    float: left;
+    font-size: 1rem;
+    color: #7d4112;
+    line-height: 1.5rem;
+}
+#main div.packsForm form div.name input {
+    width: 70%;
+    float: right;
+    border: 1px solid #7f4214;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+}
+/*填写表单 end*/
+/*恭喜*/
+#main div.congratulation {
+    width: 100%;
+    margin: 1rem auto 2rem;
+    text-align: center;
+    line-height: 27px;
+    color: #7d4112;
+}
+/*没底部margin*/
+#main div.packs-activity{
+    padding-bottom: 12.8rem
+}
+input[type="text"],input[type="password"] {
+    -webkit-appearance: none;
+}
+/*领取按钮 start*/
+/*#main div.getBtn{
+    margin: 0.5rem auto 0;
+}*/
+#main div.getBtn input{
+    font-size: 1.2rem;
+}
+#main div.menu-btn{
+    margin: 0 auto 0;
+    padding-bottom: 0;
+}
+/*领取按钮 end*/
+/*弹窗表单 start*/
+#main div.popUpForm {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 6rem;
+    left: 10%;
+    color: white;
+    text-align: center;
+    padding: 7.5rem 0;
+    font-size: 1rem;
+    display: none;
+}
+#main div.popUpForm div.close{
+    width: 4%;
+    position: absolute;
+    top: 1rem;
+    right: 4%;
+}
+#main div.popUpForm div.close img{
+    width: 100%;
+}
+/*弹窗表单 end*/
+/*活动弹窗 start*/
+#main div.popUpActivity {
+    width: 100%;
+    /*新增*/
+    max-width: 770px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: fixed;
+
+    background: rgba(0, 0, 0, .8);
+    /*position: absolute;*/
+    top: 0;
+    /*left: 0;*/
+    padding: 0 0 18rem;
+    z-index: 3;
+    display: none;
+}
+#main div.popUpActivity div.popUpTitle{
+    width: 40%;
+    margin: 1.6rem auto 0;
+}
+#main div.popUpActivity div.popUpTitle img{
+    width: 100%;
+}
+#main div.popUpTxt {
+    color: white;
+    margin: 0.2rem 0.2rem 0;
+    font-size: 0.75rem;
+    line-height: 1.85rem;
+    overflow-y: scroll;
+    padding: 0 8% 0 3%;
+}
+#main div.popUpActivity div.close{
+    width: 4%;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+#main div.popUpActivity div.close img{
+    width: 100%;
+}
+#style-7::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+/*暂时*/
+#style-7::-webkit-scrollbar
+{
+    width: 2px;
+    background-color: #ffffff;
+}
+#style-7::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122,153,217)),
+    color-stop(0.72, rgb(73,125,189)),
+    color-stop(0.86, rgb(28,58,148)));
+}
+/*暂时*/
+/*活动弹窗 end*/
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    #main div.activity-notice{padding-bottom: 10.2rem;}
+    #main div.popUpForm{padding: 7rem 0;}
+    #main div.getBtn input{font-size: 1.1rem;}
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    #main div.activity-notice{padding-bottom: 6.2rem;}
+    #main div.popUpForm{padding: 6.5rem 0;}
+    #main div.congratulation{font-size: 0.75rem;margin: 1rem auto 1rem;}
+    #main div.menuBtn input{font-size: 1rem;top:-5%;}
+    #main div.getBtn input{font-size: 1rem;}
+    #main div.title{margin: 2rem 0 0;}
+}

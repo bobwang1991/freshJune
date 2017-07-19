@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>六月鲜</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+    <link rel="stylesheet" href="css/normal-style.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div id="main">
+    <!--logo start-->
+    <div class="logo"><img src="images/logo.png" alt=""/></div>
+    <!--logo end-->
+    <!--小雨滴 start-->
+    <div class="small-water-point"><img src="images/small-water.png" alt=""/></div>
+    <!--小雨滴 end-->
+    <!--大雨滴 start-->
+    <div class="big-water-point">
+        <div><img src="images/home/big-water-1.png" alt=""/></div>
+        <div><img src="images/home/big-water-2.png" alt=""/></div>
+        <div><img src="images/home/big-water-3.png" alt=""/></div>
+        <div><img src="images/home/big-water-4.png" alt=""/></div>
+        <div><img src="images/home/big-water-5.png" alt=""/></div>
+        <div><img src="images/home/big-water-6.png" alt=""/></div>
+        <div><img src="images/home/big-water-7.png" alt=""/></div>
+    </div>
+    <!--大雨滴 end-->
+    <!--首页标题文字 start-->
+    <div class="home-txt"><img src="images/home/home-txt.png" alt=""/></div>
+    <!--首页标题文字 end-->
+    <!--底部瓶子 start-->
+    <div class="bottle">
+        <img src="images/home/bottle.png" alt=""/>
+    </div>
+    <!--底部瓶子 end-->
+    <!--musicBtn start-->
+    <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+    <audio loop="" id="bg_music" autoplay="autoplay">
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--musicBtn end-->
+</div>
+
+<div style="display: none;" id="imgPackage">
+    <img data-src="images/gif/cartoon-01.gif" class="preImg"/>
+    <img data-src="images/gif/cartoon-02.gif" class="preImg"/>
+    <img data-src="images/gif/cartoon-03.gif" class="preImg"/>
+
+    <img data-src="images/game/bottle-01.png" class="preImg"/>
+    <img data-src="images/game/bottle-02.png" class="preImg"/>
+    <img data-src="images/game/bottle-03.png" class="preImg"/>
+    <img data-src="images/game/bottle-04.png" class="preImg"/>
+    <img data-src="images/game/bottle-05.png" class="preImg"/>
+    <img data-src="images/game/bottle-06.png" class="preImg"/>
+
+
+    <img data-src="images/game/date-01.png" class="preImg"/>
+    <img data-src="images/game/date-02.png" class="preImg"/>
+    <img data-src="images/game/date-03.png" class="preImg"/>
+    <img data-src="images/game/date-04.png" class="preImg"/>
+    <img data-src="images/game/date-05.png" class="preImg"/>
+    <img data-src="images/game/date-06.png" class="preImg"/>
+
+
+    <img data-src="images/game/sunMoon-01.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-02.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-03.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-04.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-05.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-06.jpg" class="preImg"/>
+    <img data-src="images/game/sunMoon-07.jpg" class="preImg"/>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyloadxt.js"></script>
+<script type="text/javascript">
+    $(function ()
+    {
+        var hMain = $(window).height();
+        $('#main').height(hMain);
+    });
+
+    /*背景音乐*/
+    (function () {
+        var bg_music = document.getElementById("bg_music");
+        $('.musicBtn').toggle(function() {
+            if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                $('.musicBtn img').attr('src', 'images/musicOff.png');
+                bg_music.pause();
+            }
+        },function() {
+            if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                $('.musicBtn img').attr('src', 'images/musicOn.png');
+                bg_music.play();
+            }
+        });
+    })(jQuery);
+
+    (function ()
+    {
+        var _obj = $('.big-water-point>div');
+        setInterval(function ()
+        {
+            _obj.addClass('animation');
+            setTimeout(function ()
+            {
+                _obj.removeClass('animation');
+                animation_displayed = true;
+            }, 3500);
+        }, 4000);
+    })(jQuery);
+
+    //----------------------------------------
+    var count = $("img[data-src]").length;
+    var index = 0;
+    var animation_displayed = false;
+
+    function progress(current, total)
+    {
+        var percent = parseInt(( current / total ) * 100) + "%";
+        if (current == total)
+        {
+
+            if (animation_displayed)
+            {
+                setTimeout(function ()
+                {
+
+                    window.location = "cartoonFirst.html";
+                }, 3000);
+            } else
+            {
+
+                setTimeout(function ()
+                {
+
+                    window.location = "cartoonFirst.html";
+                }, 7000);
+            }
+
+        }
+    }
+
+    $.extend($.lazyLoadXT, {
+        srcAttr: 'data-src',
+        forceLoad: true,
+        onload: function ()
+        {
+            index++;
+            console.log("-->onload. " + index + "/" + count);
+            progress(index, count);
+        },
+        onerror: function ()
+        {
+            index++;
+            console.log("-->onerror, ");
+            progress(index, count);
+        }
+    });
+
+</script>
+</body>
+</html>

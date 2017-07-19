@@ -1,0 +1,122 @@
+#main div.share-menu{
+    width: 95%;
+    margin: 3.6rem auto 1.7rem;
+    position: relative;
+}
+#main div.share-menu img{
+    width: 100%;
+}
+#main div.share-menu div.pushpin{
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 6%;
+}
+#main div.share-menu div.white-shadow {
+    width: 90%;
+    height: 20rem;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    position: absolute;
+    top: 1.6rem;
+    left: 6%;
+}
+#main div.share-menu div.share-txt {
+    width: 45%;
+    position: absolute;
+    top: 3rem;
+    left: 15%;
+}
+#main div.share-menu div.share-txt p span{
+    display: block;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#main div.finsh-menu {
+    color: #764f39;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+/*领取按钮*/
+#main div.getBtn {
+    width: 100%;
+    height: 4.3rem;
+    margin: 0.5rem auto 10.7rem;
+    background: url("../images/btnBg.png") no-repeat;
+    background-position: center;
+    background-size: 40%;
+    position: relative;
+}
+#main div.getBtn input {
+    position: absolute;
+    top: 27%;
+    left: 34%;
+    width: 33%;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    color: #7d4112;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+/*定制页面*/
+#main div.customized{
+    color: #764f39;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#main div.custBtn{
+    margin: 0.5rem auto 9.5rem;
+}
+/*弹窗分享 start*/
+#main div.popUpShare {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(9, 1, 3, .8);
+    display: none;
+}
+#main div.popUpShare div.arrow{
+    width: 20%;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+}
+#main div.popUpShare div.arrow img{
+    width: 100%;
+}
+#main div.popUpShare div.popTxt{
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 4.4rem;
+    left: 27%;
+}
+/*弹窗分享 end*/
+
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    #main div.getBtn{margin: 0.5rem auto 8.6rem;}
+    #main div.custBtn{margin: 0.5rem auto 7.4rem;}
+    #main div.share-menu div.white-shadow{
+        height: 18rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    #main div.getBtn{margin: 0.5rem auto 7rem;}
+    #main div.custBtn{margin: 0.5rem auto 4.3rem;}
+    #main div.share-menu div.white-shadow{top: 1.3rem;height: 15.5rem;}
+    #main div.share-menu div.share-txt{width: 55%;}
+    /*6.30 17:50新增*/
+    #main div.share-menu{margin: 2rem auto 1.7rem;}
+    /*7.2修改*/
+    #main div.popUpShare div.popTxt{left: 20%;}
+    #main div.popUpShare div.arrow{top: 7%;}
+}

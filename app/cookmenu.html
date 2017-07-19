@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>六月鲜</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/cookmenu.css"/>
+</head>
+<body>
+<div id="main">
+    <!--菜谱图 start-->
+    <div class="hardMenu" style="display: block;">
+        <!--title start-->
+        <div class="title">
+            <p>用心菜谱</p>
+        </div>
+        <!--title end-->
+        <!--cookProduct start-->
+        <div class="cookProduct">
+            <p>
+                写下你的用心感言，将你的用心菜谱分享<br/>
+                给身边的人，让他们和你一起享用这份用心
+            </p>
+        </div>
+        <!--cookProduct end-->
+        <!--banner start-->
+        <div class='swipe'>
+            <ul id='slider'>
+                <li>
+                    <a><img src="images/menu/menuCover-01.png" alt=""/></a>
+                    <div class="watchMenuContent clearfix">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-02.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-03.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-04.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-05.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-06.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="images/menu/menuCover-07.png" alt=""/></a>
+                    <div class="watchMenuContent">
+                        <p>
+                            <img src="images/menu/watchMenuConetnt.png" alt=""/>
+                            <span>查看菜谱</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div id="prev" onClick="t1.prev();">
+                <img src="images/menu/prev.png" alt=""/>
+            </div>
+            <div id="next" onClick="t1.next();">
+                <img src="images/menu/next.png" alt=""/>
+            </div>
+        </div>
+        <!--banner end-->
+        <!--填写祝福话语 start-->
+        <div class="wish">
+            <textarea id="wish" name="wish" placeholder="编辑你的用心祝福：把祝福送给你爱的人，即可领取六月鲜商城优惠券，更有机会获得超值大礼包哦~"></textarea>
+        </div>
+        <!--填写祝福话语 end-->
+        <!--领取按钮 start-->
+        <div class="getBtn">
+            <a href="javascript:void(0)" id="createMenu">
+                <input type="button" value="领取用心红包"/>
+            </a>
+        </div>
+        <!--领取按钮 end-->
+    </div>
+    <!--菜谱图 end-->
+    <!--弹窗 菜谱详情 start-->
+    <div class="popUp">
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle clearfix">
+                <img src="images/menu/popUp-title-prawn.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    他说我是吃虾小能手，却忘了他也是个剥虾高手。今天用心蒸一盘虾，换我来为他剥虾，一辈子，只为一个人。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/prawn.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    虾 、粉丝、娃娃菜、大蒜
+                    <span>调料：</span>
+                    六月鲜柠檬蒸鱼酱油、 盐、料酒、糖 素油
+                    <span>做法：</span>
+                    粉丝切断码盘打底，放上娃娃菜粗丝，再放上腌制好的虾上锅蒸熟。大蒜末下油锅爆香，倒入料酒、六月鲜柠檬蒸鱼酱油、糖，水烧开后淋在蒸熟的虾上即可。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle clearfix">
+                <img src="images/menu/popUp-title-chicken.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    儿时，妈妈做的鸡腿是对我们取得好成绩的鼓励；今天，我也要用心做一份粉蒸鸡腿，将这份爱的鼓励传递下去。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/chicken.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    鸡腿、土豆
+                    <span>调料：</span>
+                    六月鲜特级酱油、五香蒸肉粉、料酒
+                    <span>做法：</span>
+                    鸡腿加入六月鲜特级酱油、五香蒸肉粉、料酒适
+                    量，调均；加入土豆片上锅电高压锅蒸。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle">
+                <img src="images/menu/popUp-title-mushroom.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    以前那个嘴巴闲不住的吃货，如今却被炎热赶走了食欲，用心做一盘扣三丝，丝丝清爽入味，让你继续幸福的吃下去。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/mushroom.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    杏鲍菇、黑木耳、 香莴笋
+                    <span>调料：</span>
+                    六月鲜特级淡盐酱油、香油、糖 、胡椒粉、鲜辣粉
+                    <span>做法：</span>
+                    香菇、黑木耳煮熟切丝、香莴笋刨丝盐腌制去水，三丝用碗装好，扣在盘子上，再浇上用六月鲜特级淡盐酱油、白砂糖、鲜辣粉、胡椒粉、加水烧成的酱汁，最后加上香油即可。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle">
+                <img src="images/menu/popUp-title-matsutake.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    宝宝最爱唱采蘑菇的小姑娘，炒一盘绚丽的松蘑小炒，将美味与她的童音相和，让这一份用心陪着孩子感受多彩生活的美妙。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/matsutake.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    肉末、腐竹、红松蘑、彩椒、黄瓜
+                    <span>调料：</span>
+                    六月鲜特级淡盐酱油、 盐、料酒、糖 素油
+                    <span>做法：</span>
+                    将肉沫放入炒至变色、下入腐竹和松蘑小火炖5--8分钟，汤汁基本收干后加入六月鲜特级淡盐酱油和盐翻炒均匀，最后放入彩椒片和黄瓜片配色。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle">
+                <img src="images/menu/popUp-title-meat.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    还记得妈妈在起锅前偷偷塞给你的那块红烧肉的味道吗？从食材的准备到配料的挑选，再到烹饪，步步用心，那是爱的味道，值得好好品味。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/meat.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    五花肉、葱、姜、蒜、辣椒、八角
+                    <span>调料：</span>
+                    六月鲜红烧酱油
+                    <span>做法：</span>
+                    五花肉入锅翻炒，加六月鲜红烧酱油、糖翻炒出糖色；移入炖锅加配料，加入没过肉块的水焖煮40分钟；大火收汁即可出锅摆盘。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle">
+                <img src="images/menu/popUp-title-chafingDish.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    今天我又做了电饭煲火锅，用心复习那一年我们偷偷躲在宿舍吃电饭煲火锅的味道，美味依旧，我们的情谊依旧。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/chafingDish.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    虾、雪花牛肉、鸡蛋、老豆腐、香菇、金针菇、蓬蒿、魔芋大葱、米酒
+                    <span>调料：</span>
+                    六月鲜特级酱油、盐、黄油
+                    <span>做法：</span>
+                    牛肉入黄油煎至变色加入六月鲜特级酱油、盐、糖；老豆腐入黄油煎至金黄；处理过的牛肉、老豆腐和其他洗净的食材整齐摆放在电饭煲内，加水淹过食材，煲熟即可。
+                </p>
+            </div>
+        </div>
+        <div class="cook" style="display: none;">
+            <div class="close"><img src="images/menu/close.png" alt=""/></div>
+            <div class="cookTitle">
+                <img src="images/menu/popUp-title-meatball.png" alt=""/>
+            </div>
+            <div class="cookDetail">
+                <p>
+                    小时的春节，阿婆必做的是肉圆，如今我也会做肉圆了，熟悉的气味唤起儿时的记忆，也包含着爱的用心与温暖。
+                </p>
+            </div>
+            <div class="cook-pic">
+                <img src="images/menu/meatball.jpg" alt=""/>
+            </div>
+            <div class="cookMenu">
+                <p>
+                    <span>食材：</span>
+                    猪肉、山药、青菜、荸荠、葱姜蒜
+                    <span>调料：</span>
+                    六月鲜特级原汁酱油、黑胡椒粉、盐
+                    <span>做法：</span>
+                    肉去皮剁成肉糜加入辅料拌均匀，蘸淀粉水摔打成球，煎成金黄色外衣肉丸，加入葱姜蒜、六月鲜特级原汁酱油加水小火30分钟，大火收汁加入白灼青菜摆盘。
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--弹窗 菜谱详情 end-->
+    <!--musicBtn start-->
+    <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+    <audio loop="" id="bg_music" autoplay="autoplay">
+        <source src="music/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--musicBtn end-->
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/touchslider.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+
+    var t1;
+    var link_createmenu_flag = true;
+
+
+    function createDoneCb(data, textStatus, jqXHR) {
+        if (textStatus == "success") {
+
+            if (data.status == ReturnDataConstans.code.STATUS_OK) {
+                var pcode = data.result;
+                window.location = "showAward.do?pcode=" + pcode;
+            } else {
+
+                common.tips(data.message);
+                link_createmenu_flag = true;
+            }
+        }
+    }
+
+    function createFailCb(jqXHR, textStatus, errorThrown) {
+        common.tips(errorThrown.toString());
+        link_createmenu_flag = true;
+    }
+
+
+    function createMyMenu() {
+        var menuId = t1.current + 1;
+        var jq_message = $("#wish");
+        var message = $.trim(jq_message.val());
+
+        if (message == "") {
+            common.tips("请填写您的用心祝福");
+            jq_message.focus();
+            return;
+        }
+        if (message.length > 80) {
+            common.tips("文字长度超长");
+            jq_message.focus();
+            return;
+        }
+
+        //禁止重复点击
+        link_createmenu_flag = false;
+        var param = {menuId: menuId, message: message};
+        $.ajax({
+            url: "createMenu.do",
+            type: "POST",
+            data: param,
+            dataType: "json"
+        }).done(createDoneCb).fail(createFailCb);
+
+    }
+
+    $(function () {
+
+        t1 = new TouchSlider('slider',
+                {
+                    duration: 800,
+                    interval: 3000,
+                    direction: 0,
+                    start:0,
+                    autoplay: false,
+                    align: 'center',
+                    mousewheel: false,
+                    mouse: true,
+                    fullsize: false
+                });
+
+        $('.swipe>ul>li').each(function (index, ele) {
+            $(this).click(function () {
+                $('.hardMenu').hide();
+                $('.popUp>div.cook').eq(index).show().siblings().hide();
+            });
+        });
+        $('.popUp>div.cook').find('.close').click(function () {
+            $('.hardMenu').show();
+            $('.popUp>div.cook').hide()
+        });
+
+
+        $("#createMenu").on('click', function () {
+
+            if (link_createmenu_flag) {
+                createMyMenu();
+            }
+
+        });
+
+    });
+
+    /*背景音乐*/
+    (function () {
+        var bg_music = document.getElementById("bg_music");
+        $('.musicBtn').toggle(function() {
+            if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                $('.musicBtn img').attr('src', 'images/musicOff.png');
+                bg_music.pause();
+            }
+        },function() {
+            if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                $('.musicBtn img').attr('src', 'images/musicOn.png');
+                bg_music.play();
+            }
+        });
+    })(jQuery);
+
+
+</script>
+</body>
+</html>

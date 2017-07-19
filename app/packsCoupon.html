@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>六月鲜</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>-->
+        <link rel="stylesheet" href="css/reset.min.css"/>
+        <link rel="stylesheet" href="css/public.css"/>
+        <link rel="stylesheet" href="css/cashCoupon.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <!--标题 start-->
+            <div class="title">
+                <p>用心酱励</p>
+            </div>
+            <!--标题 end-->
+            <!--大礼包 start-->
+            <div class="packs">
+                <img src="images/cash-coupon/packs.png" alt=""/>
+            </div>
+            <!--大礼包 end-->
+            <!--恭喜 start-->
+            <div class="congratulation">
+                <p>
+                    恭喜你获得六月鲜大礼包一份，<br/>
+                    请留下您的详细联系方式方便快递邮寄。
+                </p>
+            </div>
+            <!--恭喜 end-->
+            <!--填写表单 start-->
+            <div class="packsForm">
+                <form action="" method="post">
+                    <div class="name clearfix">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name"/>
+                    </div>
+                    <div class="name clearfix">
+                        <label for="phone">手机：</label>
+                        <input type="text" id="phone"/>
+                    </div>
+                    <div class="name clearfix">
+                        <label for="name">地址：</label>
+                        <input type="text" id="address"/>
+                    </div>
+                </form>
+            </div>
+            <!--填写表单 end-->
+            <!--领取按钮 start-->
+            <div class="getBtn">
+                <a href="javascript:void(0);">
+                    <input type="button" value="用心领取"/>
+                </a>
+            </div>
+            <!--领取按钮 end-->
+            <!--活动说明 start-->
+            <div class="activity-notice packs-activity">
+                <p>
+                    <img src="images/cash-coupon/point.png" alt=""/>
+                    <span>活动说明</span>
+                </p>
+            </div>
+            <!--活动说明 end-->
+            <!--弹窗表单 start-->
+            <div class="popUpForm">
+                <div class="close"><img src="images/cash-coupon/close.png" alt=""/></div>
+                <p>
+                    您好，您已提交过联系方式，<br/>
+                    请重新确认联系方式并提交。
+                </p>
+            </div>
+            <!--弹窗表单 end-->
+            <!--活动弹窗 start-->
+            <div class="popUpActivity">
+                <div class="close"><img src="images/cash-coupon/close.png" alt=""/></div>
+                <div class="popUpTitle" id="Title">
+                    <img src="images/cash-coupon/popUpTxt.png" alt=""/>
+                </div>
+                <div class="popUpTxt" id="style-7">
+                    <p>
+                        1. 活动时间：<br/>
+                        2016年7月4日——2016年7月17日<br/>
+                        2. 活动参与方式：<br/>
+                        在活动页面体验酿造酱油过程后，选择菜谱并写下您的用心故事分享至朋友圈，即可参与抽奖。<br/>
+                        3. 奖项设置及中奖规则<br/>
+                        奖品为系统随机抽取，数量送完为止。<br/>
+                        一等奖：【六月鲜礼包一份】（数量100份）<br/>
+                        二等奖：【微商城5元优惠券】（数量100,000份）<br/>
+                        4. 领奖方式：<br/>
+                        1）点击优惠券领取，使用方式参见店铺说明。<br/>
+                        2）六月鲜礼包：<br/>
+                        a.填写个人信息（姓名+电话+邮寄地址），活动结束后的一周内以快递寄出；确认领奖事宜后1个月内，如未向主办方声明礼包获得情况，则视为已获得，逾期不补；<br/>
+                        b.如因获奖者提供信息不全或有误（包括真实姓名、邮寄地址及联系电话等），导致礼包无法送达，主办方不为此承担任何责任。<br/>
+                        c.本活动奖项一经确认不得转换、转让或折换现金，奖品规格外观以实物为准。<br/>
+                        5. 其他：<br/>
+                        1)	本次活动的主办方为欣和六月鲜（统一简称"主办方"）。<br/>
+                        2)	主办方及其广告公司、网络合作伙伴的员工及其家属不可参加此活动，以示公允。<br/>
+                        3)	对于任何通过不正当手段参加活动者，主办方有权在不事先通知的前提下取消其参加活动及获奖资格。<br/>
+                        4)	主办方不对因网络传输原因而导致参加者提交的信息错误承担任何责任。<br/>
+                        5)	如遇不可抗力因素，本活动因故无法进行时，主办方在法律允许的范围内有权决定取消、终止、修改或暂停本活动。
+                    </p>
+                </div>
+            </div>
+            <!--活动弹窗 end-->
+            <!--musicBtn start-->
+            <div class="musicBtn"><img src="images/musicOn.png" alt=""/></div>
+            <audio loop="" id="bg_music" autoplay="autoplay">
+                <source src="music/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!--musicBtn end-->
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var hMain = $(window).height();
+                var hTitle = $('#Title').height();
+                $('#style-7').height(hMain-70);
+            });
+            (function () {
+                var _popUpForm = $('#main>div.popUpForm');
+                $('.getBtn').click(function () {
+                    _popUpForm.show();
+                });
+                $('.close').click(function () {
+                    _popUpForm.hide();
+                });
+            })(jQuery);
+            (function () {
+                var _btn = $('#main>div.activity-notice');
+                var _close = $('#main>div.popUpActivity>div.close');
+                var _activity = $('#main>div.popUpActivity');
+                _btn.click(function () {
+                    _activity.show();
+                });
+                _close.click(function () {
+                    _activity.hide();
+                });
+            })();
+            /*背景音乐*/
+            (function () {
+                var bg_music = document.getElementById("bg_music");
+                $('.musicBtn').toggle(function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOn.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOff.png');
+                        bg_music.pause();
+                    }
+                },function() {
+                    if ($('.musicBtn img').attr('src', 'images/musicOff.png')) {
+                        $('.musicBtn img').attr('src', 'images/musicOn.png');
+                        bg_music.play();
+                    }
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
